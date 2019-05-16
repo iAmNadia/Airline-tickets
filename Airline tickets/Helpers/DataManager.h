@@ -10,7 +10,7 @@
 #import "Country.h"
 #import "City.h"
 #import "Airport.h"
-
+#import "Ticket.h"
 
 #define kDataManagerLoadDataDidComplete @"DataManagerLoadDataDidComplete"
 

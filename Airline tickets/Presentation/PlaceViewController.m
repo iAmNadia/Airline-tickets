@@ -11,7 +11,7 @@
 #define ReuseIdentifier @"​CellIdentifier"
 
 @interface PlaceViewController()
-@property(nonatomic)PlaceType plaseType;
+@property(nonatomic, assign)PlaceType plaseType;
 @property(nonatomic, strong) UITableView *tableView;
 @property(nonatomic, strong) UISegmentedControl *segmentedControl;
 @property(nonatomic, strong) NSArray *currentArray;
