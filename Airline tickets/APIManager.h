@@ -11,6 +11,8 @@
 
 #define AirlineLogo(iata) [NSURL URLWithString:[NSString stringWithFormat:@"https://pics.avs.io/200/200/%@.png", iata]];
 
+#define API_URL_MAP_PRICE @"https://map.aviasales.ru/prices.json?origin_iata="
+
 typedef struct SearchRequest {
     __unsafe_unretained NSString *origin;
     __unsafe_unretained NSString *destionation;
@@ -21,11 +23,10 @@ typedef struct SearchRequest {
 
 @interface APIManager : NSObject
 
-
 + (instancetype)sharedInstance;
 - (void)ticketsWithRequest:(SearchRequest)request withCompletion:(void (^)(NSArray *tickets))completion;
 
 - (void)cityForCurrentApi:(void (^)(City *city))completion;
-
+- (void)mapPricesFor:(City *)origin withCompletion:(void (^)(NSArray *prices))completion;
 @end
 

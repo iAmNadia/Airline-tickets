@@ -70,6 +70,7 @@
     _searchButton.layer.cornerRadius = 8.0;
     _searchButton.titleLabel.font = [UIFont systemFontOfSize:20.0 weight:UIFontWeightBold];
    
+
     [_searchButton addTarget:self action:@selector(searchButtonDidTap:) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:_searchButton];
@@ -78,13 +79,13 @@
 }
 
 
-//- (void)dealloc {
-//    [[NSNotificationCenter defaultCenter] removeObserver:self name:kDataManagerLoadDataDidComplete object:nil];
-//}
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:kDataManagerLoadDataDidComplete object:nil];
+}
 
 - (void)dataLoadedSuccessfully {
     [[APIManager sharedInstance]cityForCurrentApi:^(City *city) {
-        [self setPlace:city withDataType:DataSourceTypeCity andPlaceType:PlaceTypeDeparture forButton:_departureButton];
+        [self setPlace:city withDataType:DataSourceTypeCity andPlaceType:PlaceTypeDeparture forButton:self->_departureButton];
     }];
 }
 
@@ -155,10 +156,11 @@
 //            [self setPlace:city withDataType:DataSourceTypeCity andPlaceType:PlaceTypeDeparture forButton:_departureButton];
     
     }
--(void)dealloc
-{
-        [[NSNotificationCenter defaultCenter] removeObserver:self];
-    }
+//-(void)dealloc
+//{
+//        [[NSNotificationCenter defaultCenter] removeObserver:self];
+//    }
+
 //    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadDataComplete) name:kDataManagerLoadDataDidComplete object:nil];
 //}
 

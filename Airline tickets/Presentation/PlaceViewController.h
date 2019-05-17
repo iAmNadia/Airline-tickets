@@ -18,9 +18,6 @@ typedef enum PlaceType {
 - (void)selectPlace:(id)place withType:(PlaceType)placeType andDataType:(DataSourceType)dataType;
 @end
 
-
-//@interface PlaceViewController : NSObject
-
 @interface PlaceViewController : UIViewController <PlaceViewControllerDelegate, UITableViewDataSource>
 
 @property (nonatomic, weak) id<PlaceViewControllerDelegate>delegate;

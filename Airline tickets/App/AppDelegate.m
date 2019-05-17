@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
+#import "MapViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,8 +22,8 @@
     CGRect windowFrame = [[UIScreen mainScreen] bounds];
     self.window = [[UIWindow alloc] initWithFrame: windowFrame];
 
-    MainViewController *mainViewController = [[MainViewController alloc] init];
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController: mainViewController];
+    MapViewController *mapViewController = [[MapViewController alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController: mapViewController];
 
     self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
