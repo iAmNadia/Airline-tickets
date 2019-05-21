@@ -21,6 +21,7 @@
 		8979F618228C0CE100F6C5CB /* TicketTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8979F617228C0CE100F6C5CB /* TicketTableViewCell.m */; };
 		8979F61B228C33A700F6C5CB /* TicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8979F61A228C33A700F6C5CB /* TicketViewController.m */; };
 		897B0D5D22898D1C00C3CE0A /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 897B0D5C22898D1C00C3CE0A /* APIManager.m */; };
+		89946C7122940A330089EBD2 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89946C7022940A330089EBD2 /* TabBarController.m */; };
 		89A71C2422819B6B00FFA4CF /* Airports.json in Resources */ = {isa = PBXBuildFile; fileRef = 89A71C2122819B6B00FFA4CF /* Airports.json */; };
 		89A71C2522819B6B00FFA4CF /* Cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 89A71C2222819B6B00FFA4CF /* Cities.json */; };
 		89A71C2622819B6B00FFA4CF /* Countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 89A71C2322819B6B00FFA4CF /* Countries.json */; };
@@ -59,6 +60,8 @@
 		8979F61A228C33A700F6C5CB /* TicketViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TicketViewController.m; sourceTree = "<group>"; };
 		897B0D5B22898D1C00C3CE0A /* APIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIManager.h; sourceTree = "<group>"; };
 		897B0D5C22898D1C00C3CE0A /* APIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
+		89946C6F22940A330089EBD2 /* TabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		89946C7022940A330089EBD2 /* TabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 		89A71C2122819B6B00FFA4CF /* Airports.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Airports.json; sourceTree = "<group>"; };
 		89A71C2222819B6B00FFA4CF /* Cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Cities.json; sourceTree = "<group>"; };
 		89A71C2322819B6B00FFA4CF /* Countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Countries.json; sourceTree = "<group>"; };
@@ -191,6 +194,8 @@
 				8979F61A228C33A700F6C5CB /* TicketViewController.m */,
 				89AD062E228F1AC600198F38 /* MapViewController.h */,
 				89AD062F228F1AC600198F38 /* MapViewController.m */,
+				89946C6F22940A330089EBD2 /* TabBarController.h */,
+				89946C7022940A330089EBD2 /* TabBarController.m */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -324,6 +329,7 @@
 				89F572F722819EDA001C101D /* PlaceViewController.m in Sources */,
 				8913D38622807B7E00C457CA /* Airport.m in Sources */,
 				89AD0630228F1AC600198F38 /* MapViewController.m in Sources */,
+				89946C7122940A330089EBD2 /* TabBarController.m in Sources */,
 				8913D3782280780500C457CA /* main.m in Sources */,
 				8913D36A2280780400C457CA /* AppDelegate.m in Sources */,
 			);

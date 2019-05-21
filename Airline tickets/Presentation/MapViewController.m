@@ -62,6 +62,7 @@
 - (void)setPrices:(NSArray *)prices {
     _prices = prices;
     [_mapView removeAnnotations: _mapView.annotations];
+    self.mapView.tintColor = UIColor.greenColor;
     
     for (MapPrice *price in prices) {
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -69,6 +70,7 @@
             annotation.title = [NSString stringWithFormat:@"%@ (%@)", price.destination.name, price.destination.code];
             annotation.subtitle = [NSString stringWithFormat:@"%ld руб.", (long)price.value];
             annotation.coordinate = price.destination.coordinate;
+        
             [self->_mapView addAnnotation: annotation];
         });
     }
