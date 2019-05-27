@@ -22,6 +22,9 @@
 		8979F61B228C33A700F6C5CB /* TicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8979F61A228C33A700F6C5CB /* TicketViewController.m */; };
 		897B0D5D22898D1C00C3CE0A /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 897B0D5C22898D1C00C3CE0A /* APIManager.m */; };
 		89946C7122940A330089EBD2 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89946C7022940A330089EBD2 /* TabBarController.m */; };
+		8998DF08229C7E9E00CE61C4 /* ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8998DF07229C7E9E00CE61C4 /* ProgressView.m */; };
+		8998DF0B229C821400CE61C4 /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8998DF0A229C821400CE61C4 /* ContentViewController.m */; };
+		8998DF0E229C82C200CE61C4 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8998DF0D229C82C200CE61C4 /* FirstViewController.m */; };
 		89A71C2422819B6B00FFA4CF /* Airports.json in Resources */ = {isa = PBXBuildFile; fileRef = 89A71C2122819B6B00FFA4CF /* Airports.json */; };
 		89A71C2522819B6B00FFA4CF /* Cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 89A71C2222819B6B00FFA4CF /* Cities.json */; };
 		89A71C2622819B6B00FFA4CF /* Countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 89A71C2322819B6B00FFA4CF /* Countries.json */; };
@@ -66,6 +69,12 @@
 		897B0D5C22898D1C00C3CE0A /* APIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
 		89946C6F22940A330089EBD2 /* TabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
 		89946C7022940A330089EBD2 /* TabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+		8998DF06229C7E9E00CE61C4 /* ProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressView.h; sourceTree = "<group>"; };
+		8998DF07229C7E9E00CE61C4 /* ProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressView.m; sourceTree = "<group>"; };
+		8998DF09229C821400CE61C4 /* ContentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentViewController.h; sourceTree = "<group>"; };
+		8998DF0A229C821400CE61C4 /* ContentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
+		8998DF0C229C82C200CE61C4 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		8998DF0D229C82C200CE61C4 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		89A71C2122819B6B00FFA4CF /* Airports.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Airports.json; sourceTree = "<group>"; };
 		89A71C2222819B6B00FFA4CF /* Cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Cities.json; sourceTree = "<group>"; };
 		89A71C2322819B6B00FFA4CF /* Countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Countries.json; sourceTree = "<group>"; };
@@ -159,6 +168,19 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		8998DF05229C7E5300CE61C4 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				8998DF06229C7E9E00CE61C4 /* ProgressView.h */,
+				8998DF07229C7E9E00CE61C4 /* ProgressView.m */,
+				8998DF09229C821400CE61C4 /* ContentViewController.h */,
+				8998DF0A229C821400CE61C4 /* ContentViewController.m */,
+				8998DF0C229C82C200CE61C4 /* FirstViewController.h */,
+				8998DF0D229C82C200CE61C4 /* FirstViewController.m */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
 		89A71C1D2281999900FFA4CF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +220,7 @@
 		89A71C20228199C200FFA4CF /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				8998DF05229C7E5300CE61C4 /* Animation */,
 				8913D36B2280780400C457CA /* MainViewController.h */,
 				8913D36C2280780400C457CA /* MainViewController.m */,
 				89F572F522819ED9001C101D /* PlaceViewController.h */,
@@ -347,18 +370,21 @@
 				8913D38322807B1300C457CA /* City.m in Sources */,
 				89AD0628228F12CC00198F38 /* LocationService.m in Sources */,
 				8913D38022807AB800C457CA /* Country.m in Sources */,
+				8998DF08229C7E9E00CE61C4 /* ProgressView.m in Sources */,
 				897B0D5D22898D1C00C3CE0A /* APIManager.m in Sources */,
 				8913D38922807C0700C457CA /* DataManager.m in Sources */,
 				89AD062B228F165C00198F38 /* MapPrice.m in Sources */,
 				89C498862298801900A7CCC5 /* FavoriteTicket+CoreDataProperties.m in Sources */,
 				8979F618228C0CE100F6C5CB /* TicketTableViewCell.m in Sources */,
 				89C49877229878B000A7CCC5 /* CoreDataHelpers.m in Sources */,
+				8998DF0B229C821400CE61C4 /* ContentViewController.m in Sources */,
 				8913D36D2280780400C457CA /* MainViewController.m in Sources */,
 				8979F615228C078D00F6C5CB /* Ticket.m in Sources */,
 				89F572F722819EDA001C101D /* PlaceViewController.m in Sources */,
 				8913D38622807B7E00C457CA /* Airport.m in Sources */,
 				89C4987A22987BAE00A7CCC5 /* AirCoreData.xcdatamodeld in Sources */,
 				89AD0630228F1AC600198F38 /* MapViewController.m in Sources */,
+				8998DF0E229C82C200CE61C4 /* FirstViewController.m in Sources */,
 				89946C7122940A330089EBD2 /* TabBarController.m in Sources */,
 				8913D3782280780500C457CA /* main.m in Sources */,
 				8913D36A2280780400C457CA /* AppDelegate.m in Sources */,
@@ -495,7 +521,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 05010250D62273104978B2B6 /* Pods-Airline tickets.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CK2HZ2R8CF;
 				INFOPLIST_FILE = "Airline tickets/Info.plist";
@@ -513,7 +538,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 327BD7B13C6E461B0592A684 /* Pods-Airline tickets.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CK2HZ2R8CF;
 				INFOPLIST_FILE = "Airline tickets/Info.plist";
