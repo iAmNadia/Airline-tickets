@@ -10,11 +10,13 @@
 #import"Ticket.h"
 #import "DataManager.h"
 #import "APIManager.h"
+#import "FavoriteTicket+CoreDataProperties.h"
 
 @interface TicketTableViewCell : UITableViewCell
 
 @property (nonatomic, strong) Ticket *ticket;
-
+@property (nonatomic, strong) FavoriteTicket *favoriteTicket;
+//- (void)setFavoriteTicket:(FavoriteTicket *)favoriteTicket;
 @end
 
 

@@ -149,22 +149,7 @@
     [[APIManager sharedInstance]cityForCurrentApi:^(City *city) {
           [self selectPlace:city withType:PlaceTypeDeparture andDataType:DataSourceTypeCity];
     }];
-   
-
-        
-        ///forButton:_departureButton];
-//            [self setPlace:city withDataType:DataSourceTypeCity andPlaceType:PlaceTypeDeparture forButton:_departureButton];
     
     }
-//-(void)dealloc
-//{
-//        [[NSNotificationCenter defaultCenter] removeObserver:self];
-//    }
-
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadDataComplete) name:kDataManagerLoadDataDidComplete object:nil];
-//}
-
-
-
 
 @end

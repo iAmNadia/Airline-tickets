@@ -29,6 +29,10 @@
 		89AD062B228F165C00198F38 /* MapPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AD062A228F165C00198F38 /* MapPrice.m */; };
 		89AD062D228F19B600198F38 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89AD062C228F19B600198F38 /* Default-568h@2x.png */; };
 		89AD0630228F1AC600198F38 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AD062F228F1AC600198F38 /* MapViewController.m */; };
+		89C49877229878B000A7CCC5 /* CoreDataHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C49876229878B000A7CCC5 /* CoreDataHelpers.m */; };
+		89C4987A22987BAE00A7CCC5 /* AirCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 89C4987822987BAE00A7CCC5 /* AirCoreData.xcdatamodeld */; };
+		89C498862298801900A7CCC5 /* FavoriteTicket+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C498852298801900A7CCC5 /* FavoriteTicket+CoreDataProperties.m */; };
+		89C498892298802B00A7CCC5 /* FavoriteTicket+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C498872298802B00A7CCC5 /* FavoriteTicket+CoreDataClass.m */; };
 		89F572F722819EDA001C101D /* PlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F572F622819EDA001C101D /* PlaceViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +76,13 @@
 		89AD062C228F19B600198F38 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		89AD062E228F1AC600198F38 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		89AD062F228F1AC600198F38 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		89C49876229878B000A7CCC5 /* CoreDataHelpers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataHelpers.m; sourceTree = "<group>"; };
+		89C4987922987BAE00A7CCC5 /* AirCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AirCoreData.xcdatamodel; sourceTree = "<group>"; };
+		89C498842298800100A7CCC5 /* FavoriteTicket+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FavoriteTicket+CoreDataProperties.h"; sourceTree = "<group>"; };
+		89C498852298801900A7CCC5 /* FavoriteTicket+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FavoriteTicket+CoreDataProperties.m"; sourceTree = "<group>"; };
+		89C498872298802B00A7CCC5 /* FavoriteTicket+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FavoriteTicket+CoreDataClass.m"; sourceTree = "<group>"; };
+		89C498882298802B00A7CCC5 /* FavoriteTicket+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FavoriteTicket+CoreDataClass.h"; sourceTree = "<group>"; };
+		89F387C722982B300033DFCF /* CoreDataHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataHelper.h; sourceTree = "<group>"; };
 		89F572F522819ED9001C101D /* PlaceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceViewController.h; sourceTree = "<group>"; };
 		89F572F622819EDA001C101D /* PlaceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceViewController.m; sourceTree = "<group>"; };
 		F39471790F613406DDE63C7D /* libPods-Airline tickets.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Airline tickets.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +122,7 @@
 		8913D3672280780400C457CA /* Airline tickets */ = {
 			isa = PBXGroup;
 			children = (
+				89F387C022982A2D0033DFCF /* PersistentEntity */,
 				897B0D5A22898CF800C3CE0A /* API */,
 				89A71C1E228199B300FFA4CF /* App */,
 				898450492282B22B00DE0B08 /* Helpers */,
@@ -141,6 +153,8 @@
 				8913D38822807C0700C457CA /* DataManager.m */,
 				89AD0626228F12CC00198F38 /* LocationService.h */,
 				89AD0627228F12CC00198F38 /* LocationService.m */,
+				89F387C722982B300033DFCF /* CoreDataHelper.h */,
+				89C49876229878B000A7CCC5 /* CoreDataHelpers.m */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -198,6 +212,18 @@
 				89946C7022940A330089EBD2 /* TabBarController.m */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		89F387C022982A2D0033DFCF /* PersistentEntity */ = {
+			isa = PBXGroup;
+			children = (
+				89C498842298800100A7CCC5 /* FavoriteTicket+CoreDataProperties.h */,
+				89C498852298801900A7CCC5 /* FavoriteTicket+CoreDataProperties.m */,
+				89C498882298802B00A7CCC5 /* FavoriteTicket+CoreDataClass.h */,
+				89C498872298802B00A7CCC5 /* FavoriteTicket+CoreDataClass.m */,
+				89C4987822987BAE00A7CCC5 /* AirCoreData.xcdatamodeld */,
+			);
+			path = PersistentEntity;
 			sourceTree = "<group>";
 		};
 		ED2B0F13CE1D9AFFE72A260C /* Pods */ = {
@@ -317,17 +343,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				8979F61B228C33A700F6C5CB /* TicketViewController.m in Sources */,
+				89C498892298802B00A7CCC5 /* FavoriteTicket+CoreDataClass.m in Sources */,
 				8913D38322807B1300C457CA /* City.m in Sources */,
 				89AD0628228F12CC00198F38 /* LocationService.m in Sources */,
 				8913D38022807AB800C457CA /* Country.m in Sources */,
 				897B0D5D22898D1C00C3CE0A /* APIManager.m in Sources */,
 				8913D38922807C0700C457CA /* DataManager.m in Sources */,
 				89AD062B228F165C00198F38 /* MapPrice.m in Sources */,
+				89C498862298801900A7CCC5 /* FavoriteTicket+CoreDataProperties.m in Sources */,
 				8979F618228C0CE100F6C5CB /* TicketTableViewCell.m in Sources */,
+				89C49877229878B000A7CCC5 /* CoreDataHelpers.m in Sources */,
 				8913D36D2280780400C457CA /* MainViewController.m in Sources */,
 				8979F615228C078D00F6C5CB /* Ticket.m in Sources */,
 				89F572F722819EDA001C101D /* PlaceViewController.m in Sources */,
 				8913D38622807B7E00C457CA /* Airport.m in Sources */,
+				89C4987A22987BAE00A7CCC5 /* AirCoreData.xcdatamodeld in Sources */,
 				89AD0630228F1AC600198F38 /* MapViewController.m in Sources */,
 				89946C7122940A330089EBD2 /* TabBarController.m in Sources */,
 				8913D3782280780500C457CA /* main.m in Sources */,
@@ -519,6 +549,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		89C4987822987BAE00A7CCC5 /* AirCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				89C4987922987BAE00A7CCC5 /* AirCoreData.xcdatamodel */,
+			);
+			currentVersion = 89C4987922987BAE00A7CCC5 /* AirCoreData.xcdatamodel */;
+			path = AirCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8913D35D2280780300C457CA /* Project object */;
 }

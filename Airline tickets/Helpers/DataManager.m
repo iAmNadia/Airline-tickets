@@ -95,7 +95,6 @@
     return [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
 }
 
-
 - (NSArray *)countries
 {
     return _countriesArray;

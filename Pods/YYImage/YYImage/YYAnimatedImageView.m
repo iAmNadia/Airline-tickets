@@ -232,15 +232,15 @@ typedef NS_ENUM(NSUInteger, YYAnimatedImageType) {
 // init the animated params.
 - (void)resetAnimated {
     dispatch_once(&_onceToken, ^{
-        _lock = dispatch_semaphore_create(1);
-        _buffer = [NSMutableDictionary new];
-        _requestQueue = [[NSOperationQueue alloc] init];
-        _requestQueue.maxConcurrentOperationCount = 1;
-        _link = [CADisplayLink displayLinkWithTarget:[_YYImageWeakProxy proxyWithTarget:self] selector:@selector(step:)];
-        if (_runloopMode) {
-            [_link addToRunLoop:[NSRunLoop mainRunLoop] forMode:_runloopMode];
+        self->_lock = dispatch_semaphore_create(1);
+        self->_buffer = [NSMutableDictionary new];
+        self->_requestQueue = [[NSOperationQueue alloc] init];
+        self->_requestQueue.maxConcurrentOperationCount = 1;
+        self->_link = [CADisplayLink displayLinkWithTarget:[_YYImageWeakProxy proxyWithTarget:self] selector:@selector(step:)];
+        if (self->_runloopMode) {
+            [self->_link addToRunLoop:[NSRunLoop mainRunLoop] forMode:self->_runloopMode];
         }
-        _link.paused = YES;
+        self->_link.paused = YES;
         
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didReceiveMemoryWarning:) name:UIApplicationDidReceiveMemoryWarningNotification object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didEnterBackground:) name:UIApplicationDidEnterBackgroundNotification object:nil];
