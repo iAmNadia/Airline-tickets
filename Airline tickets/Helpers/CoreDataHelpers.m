@@ -78,6 +78,11 @@
         }
     }
 
+- (void)deleteFromFavorite:(FavoriteTicket *)ticket {
+        [self.persContainer.viewContext deleteObject:ticket];
+        [self save];
+    }
+
     - (NSArray *)favorites {
         NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"FavoriteTicket"];
         request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"created" ascending:NO]];

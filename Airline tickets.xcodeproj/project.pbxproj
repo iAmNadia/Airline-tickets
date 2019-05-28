@@ -17,6 +17,7 @@
 		8913D38322807B1300C457CA /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 8913D38222807B1300C457CA /* City.m */; };
 		8913D38622807B7E00C457CA /* Airport.m in Sources */ = {isa = PBXBuildFile; fileRef = 8913D38522807B7E00C457CA /* Airport.m */; };
 		8913D38922807C0700C457CA /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8913D38822807C0700C457CA /* DataManager.m */; };
+		893CAF37229D4A9600CFA367 /* NotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 893CAF36229D4A9600CFA367 /* NotificationCenter.m */; };
 		8979F615228C078D00F6C5CB /* Ticket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8979F614228C078D00F6C5CB /* Ticket.m */; };
 		8979F618228C0CE100F6C5CB /* TicketTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8979F617228C0CE100F6C5CB /* TicketTableViewCell.m */; };
 		8979F61B228C33A700F6C5CB /* TicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8979F61A228C33A700F6C5CB /* TicketViewController.m */; };
@@ -59,6 +60,8 @@
 		8913D38522807B7E00C457CA /* Airport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Airport.m; sourceTree = "<group>"; };
 		8913D38722807C0700C457CA /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		8913D38822807C0700C457CA /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		893CAF35229D4A9600CFA367 /* NotificationCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationCenter.h; sourceTree = "<group>"; };
+		893CAF36229D4A9600CFA367 /* NotificationCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationCenter.m; sourceTree = "<group>"; };
 		8979F613228C078D00F6C5CB /* Ticket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ticket.h; sourceTree = "<group>"; };
 		8979F614228C078D00F6C5CB /* Ticket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ticket.m; sourceTree = "<group>"; };
 		8979F616228C0CE100F6C5CB /* TicketTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TicketTableViewCell.h; sourceTree = "<group>"; };
@@ -131,19 +134,29 @@
 		8913D3672280780400C457CA /* Airline tickets */ = {
 			isa = PBXGroup;
 			children = (
-				89F387C022982A2D0033DFCF /* PersistentEntity */,
 				897B0D5A22898CF800C3CE0A /* API */,
 				89A71C1E228199B300FFA4CF /* App */,
-				898450492282B22B00DE0B08 /* Helpers */,
 				89A71C1F228199BC00FFA4CF /* Model */,
+				893CAF38229D6B5B00CFA367 /* Notification */,
+				89F387C022982A2D0033DFCF /* PersistentEntity */,
 				89A71C20228199C200FFA4CF /* Presentation */,
 				89A71C1D2281999900FFA4CF /* Resources */,
+				898450492282B22B00DE0B08 /* Helpers */,
 				8913D3712280780500C457CA /* Assets.xcassets */,
 				8913D3732280780500C457CA /* LaunchScreen.storyboard */,
 				8913D3762280780500C457CA /* Info.plist */,
 				8913D3772280780500C457CA /* main.m */,
 			);
 			path = "Airline tickets";
+			sourceTree = "<group>";
+		};
+		893CAF38229D6B5B00CFA367 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				893CAF35229D4A9600CFA367 /* NotificationCenter.h */,
+				893CAF36229D4A9600CFA367 /* NotificationCenter.m */,
+			);
+			path = Notification;
 			sourceTree = "<group>";
 		};
 		897B0D5A22898CF800C3CE0A /* API */ = {
@@ -388,6 +401,7 @@
 				89946C7122940A330089EBD2 /* TabBarController.m in Sources */,
 				8913D3782280780500C457CA /* main.m in Sources */,
 				8913D36A2280780400C457CA /* AppDelegate.m in Sources */,
+				893CAF37229D4A9600CFA367 /* NotificationCenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,7 @@
 #import "MainViewController.h"
 #import "MapViewController.h"
 #import "TabBarController.h"
+#import "NotificationCenter.h"
 
 @interface AppDelegate ()
 
@@ -25,16 +26,10 @@
 
     TabBarController *tabBarController = [[TabBarController alloc] init];
     
-//    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController: mainViewController];
-
     self.window.rootViewController = tabBarController;
     [self.window makeKeyAndVisible];
-    
-//    self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
-//    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[MainViewController new]];
 
-
-    
+    [[NotificationCenter sharedInstance]registerService];
     
     return YES;
 }

@@ -16,7 +16,8 @@
 
 @property (nonatomic, strong) Ticket *ticket;
 @property (nonatomic, strong) FavoriteTicket *favoriteTicket;
-//- (void)setFavoriteTicket:(FavoriteTicket *)favoriteTicket;
+@property (strong, nonatomic) UIImageView *airlineLogoView;
+
 @end
 
 

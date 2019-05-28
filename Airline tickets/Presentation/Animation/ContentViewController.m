@@ -14,7 +14,6 @@
 @property (strong, nonatomic) UILabel *contentLabel;
 @end
 
-
 @implementation ContentViewController
 
 - (instancetype)init

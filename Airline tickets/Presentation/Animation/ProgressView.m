@@ -56,12 +56,12 @@
     
     UIImageView *plane = [self viewWithTag:planeId];
     if (plane) {
-        [UIView animateWithDuration:1.0 animations:^{
+        [UIView animateWithDuration:2.0 animations:^{
             plane.frame = CGRectMake(self.bounds.size.width, plane.frame.origin.y, 60.0, 60.0);
         } completion:^(BOOL finished) {
             plane.frame = CGRectMake(-60.0, plane.frame.origin.y, 60.0, 60.0);
         }];
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.5 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1.0 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
             [self startAnimating:planeId+1];
         });
     }
@@ -73,7 +73,7 @@
     isActive = YES;
     [self startAnimating:1];
     [[[UIApplication sharedApplication] keyWindow] addSubview:self];
-    [UIView animateWithDuration:0.8 animations:^{
+    [UIView animateWithDuration:1.0 animations:^{
         self.alpha = 1.0;
     } completion:^(BOOL finished) {
         completion();
