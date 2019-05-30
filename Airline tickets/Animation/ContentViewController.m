@@ -21,9 +21,12 @@
     self = [super init];
     if (self) {
         _imageView = [[UIImageView alloc] initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width/2 - 100.0, [UIScreen mainScreen].bounds.size.height/2 - 100.0, 200.0, 200.0)];
-        _imageView.contentMode = UIViewContentModeScaleAspectFill;
+        _imageView.contentMode = UIViewContentModeScaleToFill;
         _imageView.layer.cornerRadius = 8.0;
-        _imageView.clipsToBounds = YES;
+        _imageView.clipsToBounds = NO;
+        _imageView.layer.shadowOffset = CGSizeMake(-10, 10);
+        _imageView.layer.shadowRadius = 5;
+        _imageView.layer.shadowOpacity = 0.5;
         [self.view addSubview:_imageView];
         
         _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width/2 - 100.0, CGRectGetMinY(_imageView.frame) - 61.0, 200.0, 21.0)];

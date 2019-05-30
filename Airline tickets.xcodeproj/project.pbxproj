@@ -139,11 +139,12 @@
 				89A71C1F228199BC00FFA4CF /* Model */,
 				893CAF38229D6B5B00CFA367 /* Notification */,
 				89F387C022982A2D0033DFCF /* PersistentEntity */,
+				8998DF05229C7E5300CE61C4 /* Animation */,
 				89A71C20228199C200FFA4CF /* Presentation */,
 				89A71C1D2281999900FFA4CF /* Resources */,
 				898450492282B22B00DE0B08 /* Helpers */,
-				8913D3712280780500C457CA /* Assets.xcassets */,
 				8913D3732280780500C457CA /* LaunchScreen.storyboard */,
+				8913D3712280780500C457CA /* Assets.xcassets */,
 				8913D3762280780500C457CA /* Info.plist */,
 				8913D3772280780500C457CA /* main.m */,
 			);
@@ -233,7 +234,6 @@
 		89A71C20228199C200FFA4CF /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				8998DF05229C7E5300CE61C4 /* Animation */,
 				8913D36B2280780400C457CA /* MainViewController.h */,
 				8913D36C2280780400C457CA /* MainViewController.m */,
 				89F572F522819ED9001C101D /* PlaceViewController.h */,
@@ -535,6 +535,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 05010250D62273104978B2B6 /* Pods-Airline tickets.debug.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CK2HZ2R8CF;
 				INFOPLIST_FILE = "Airline tickets/Info.plist";
@@ -552,6 +553,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 327BD7B13C6E461B0592A684 /* Pods-Airline tickets.release.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CK2HZ2R8CF;
 				INFOPLIST_FILE = "Airline tickets/Info.plist";
